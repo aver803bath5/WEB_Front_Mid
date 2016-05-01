@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,20 +47,25 @@ a{
 	color: #747474;
 }
 
-a:hover{
-	color: #CE0160;
+
+
+.blue-font{
+	color: #01A5CA;
+}
+
+.menu a .blue-font{
+	display: block;
 }
 
 a .blue-font:hover{
 	color: #CE0160;
 }
 
-.blue-font{
-	color: #01A5CA;
+a:hover{
+	color: #CE0160;
 }
 
-
-.background-image{
+body{
 	background-image: url("../images/bg_html.jpg");
 }
 
@@ -70,11 +75,12 @@ a .blue-font:hover{
 
 
 .wrap{
-	margin: 0 auto;
 	width: 1180px;
+	margin: 0 auto;
 }
 
 .long-bar{
+	width: 100%;
 	background-color: #292929;
 	height: 4px;
 }
@@ -129,6 +135,11 @@ h1 a{
 	float: left;
 	margin-left: 20px;
 }
+
+.menu li a{
+	display: block;
+}
+
 
 .social-link{
 	position: absolute;
@@ -268,7 +279,7 @@ h2 a:hover{
 	background: url("../images/page1-img1.jpg");
 	width: 185px;
 	height: 140px;
-	border: 5px #F4F4F4 solid; 
+	border: 5px #F4F4F4 solid;
 }
 
 .event-picture{
@@ -306,7 +317,7 @@ h3 a{
 	background: url("../images/page1-img2.jpg");
 	width: 185px;
 	height: 140px;
-	border: 5px #F4F4F4 solid; 
+	border: 5px #F4F4F4 solid;
 }
 
 .service-list-wrap{
@@ -332,6 +343,7 @@ h3 a{
 
 .service-list li a{
 	color: #373737;
+	display: block;
 }
 
 .service-list li a:hover{
@@ -351,7 +363,7 @@ h3 a{
 }
 
 .find-us-input{
-	margin-top: 20px; 
+	margin-top: 20px;
 	height: 30px;
 	width: 183px;
 	border:2px #F6F6F6 solid;
@@ -377,7 +389,7 @@ h3 a{
 
 .search-button:hover{
 	background-color: #01A5CA;
-	color: #CE0160; 
+	color: #CE0160;
 }
 
 .footer{
@@ -392,4 +404,222 @@ h3 a{
 	width: 20px;
 	height: 20px;
 	margin-right: 5px;
+}
+
+@media only screen and (max-width: 1003px){
+	.wrap{
+		width: 100%;
+	}
+
+	.container{
+	width: 900px;
+	margin: 0 auto;
+	}
+
+	.menu{
+		right:10px;
+	}
+
+	.social-link{
+	right: 10px;
+	top: 0px;
+	}
+
+	.introduce{
+	width: 860px;
+	}
+
+	.about{
+		width: 840px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.wrap{
+		width: 100%;
+	}
+
+	.container{
+		width: 700px;
+		margin: 0 auto;
+	}
+
+	.banner{
+		width: 700px;
+		clear: both;
+	}
+
+	.banner a{
+		background-repeat: no-repeat;
+		width: 700px;
+		background-size: 700px auto;
+		margin: 0 auto;
+	}
+
+	.illustration{
+		clear: both;
+		width: 100%;
+		height: 300px;
+	}
+
+	h2{
+		width: 400px;
+		margin: 0 auto;
+		margin-top: 20px;
+		font-size: 50px;
+	}
+
+	.illustration p{
+		width: 400px;
+		margin: 0 auto;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	.readmore{
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.introduce{
+		width: 660px;
+	}
+
+	.about{
+		width: 640px;
+	}
+
+	.service-list-wrap{
+		margin-top: 30px;
+		margin-left: 5px;
+		width: 320px;
+	}
+
+	.service-list-wrap ul{
+		font-size: 20px;
+	}
+
+	.find-us-wrap{
+		float: right;
+		width: 250px;
+	}
+
+	.search-button{
+		display: block;
+		width: 187px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.wrap{
+		width: 100%;
+	}
+
+	.container{
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	h1 a{
+		clear: both;
+	}
+	.menu{
+		width:290px;
+		display: block;
+		position: relative;
+		clear: both;
+		margin: 0 auto;
+	}
+
+	.menu li{
+		line-height: 30px;
+		height: 30px;
+		display: block;
+		width:100%;
+		clear: both;
+		text-align: center;
+		margin-top: 10px;
+		background: #0B1114;
+		margin-left: 0;
+		border-radius: 5px;
+	}
+
+	.menu li a{
+		display: block;
+	}
+
+	.banner{
+		display: none;
+	}
+
+	.illustration h2 {
+		width: 100%;
+		display: block;
+		text-align: center;
+		font-size: 35px;
+		margin:0 auto;
+		margin-top: 10px;
+	}
+
+	.illustration p{
+		width: 270px;
+	}
+
+	.introduce{
+		width: 260px;
+	}
+
+	.about{
+		width:240px;
+	}
+
+	.latest-events-wrap{
+		display: none;
+	}
+
+	.service-list-wrap{
+		clear: both;
+		width: 100%;
+	}
+
+	.find-us-wrap{
+		width: 100%;
+		clear: both;
+	}
+
+	.social-link{
+		position: absolute;
+		right: 10px;
+		top: 0px;
+	}
+
+
+	.social-link li{
+		clear: both;
+	}
+
+	.social-link a{
+		display: block;
+		width: 40px;
+		height: 40px;
+	}
+
+	.social-link a:hover{
+		opacity: 0.6;
+	}
+
+	.twiter a{
+		background: url("../images/dot_tweet.png");
+		background-repeat: no-repeat;
+		background-size: 40px 40px;
+	}
+
+	.facebook a{
+		background: url("../images/dot_facebook.png");
+		background-repeat: no-repeat;
+		margin-left: 0;
+		margin-top: 5px;
+		background-size: 40px 40px;
+	}
+
 }
